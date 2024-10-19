@@ -1,0 +1,22 @@
+sed 's/Doraemon/doremon/' Doraeamon  #replaces first occurence
+sed 's/Doraemon/doremon/2' Doraeamon #replaces 2nd occurence
+sed 's/Doraemon/doremon/g' Doraeamon #replaces globally
+sed '1 s/Doraemon/Doremon/' Doraeamon #replaces only in 1st line
+sed -n 's/Doraemon/Dora-dora/p' Doraeamon #Prints only matched line
+sed '1,5 -n s/Doraemon/Dora-Dora/g' Doraeamon #Replaces 1st and 5th Line
+sed -n '1,$  s/Doraemon/Dora-Dora/gp' Doraeamon #Replaces 1st to last Line
+
+
+
+#----Line Deletion-----#
+sed '2d' Doraeamon        #Deleted 2nd line
+sed  '/^$/d' Doraeamon    #Deletes the Empty Lines.
+sed '1,2d' Doraeamon      #Deletes 1 to 2 lines
+sed '2,$d' Doraeamon      #Deletes 2nd to Last Lines
+sed '/gadgets/d' Doraeamon #Deletes Lines containing gadgets
+
+
+#----Line Insertion----#
+sed G Doraeamon
+sed '/Doraemon/a\New Line****/d' Doraeamon
+sed '/Gadgets/G' Doraeamon
