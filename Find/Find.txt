@@ -1,0 +1,7 @@
+find -name Doraemon.txt
+find ./Day1/testcat/ -name *.txt
+find  -empty
+find -perm 777
+find -type d
+find -type f -name "*.txt" -exec grep 'Doraemon' --colour {} \;
+find -mtime -7

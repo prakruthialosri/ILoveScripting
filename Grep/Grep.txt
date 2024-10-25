@@ -1,0 +1,27 @@
+grep '/Doraemon/' Doraemon.txt   #matches Doraemon
+grep '/^Doraemon/' Doraemon.txt  #Matches line starting with Doraemon
+grep '.$' Doraemon.txt           #Matches line ending with .
+grep -E o\{2} Doraemon.txt       #Matches consicutives oo  ex Cartoonists 
+grep -E o\+t Doraemon.txt        #Mratches t precided by o ex. robotic 
+grep \' Doraemon.txt             #Matches ' . use \ to match special character.
+
+
+Extended Regular Expression.
+
+ 
+grep -E "(ted)" Doraemon.txt     #matched all the words with (ted) ex. animated 
+grep -E "0{2,3}" Doraemon.txt    #matched 0 . between 0 and 3
+
+
+
+#options
+
+
+grep  -n "films" Doraemon.txt     	#prints line number
+grep  -i "Films" Doraemon.txt     	#ignores case
+grep  -v "Doraemon" Doraemon.txt  	#inverts the search
+grep  -w "Doraemon" Doraemon.txt  	#exact match
+grep  -wc "Doraemon" Doraemon.txt 	#count the number of  lines where pattern are present
+grep  -wL "Doraemon"  /home/ec2-user/LinuxLearning/Oct19/Regular_Exp/* #display files Not contaning word.
+grep  -wl "Doraemon"  /home/ec2-user/LinuxLearning/Oct19/Regular_Exp/* #display files contaning word.
+egrep -o  'Doraemon|has'  Doraemon.txt #Total number of occurence
