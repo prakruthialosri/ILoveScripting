@@ -1,0 +1,14 @@
+sort File1.txt 
+sort File2.txt
+comm File1.txt File2.txt #Records present only in File1
+						 #Records present only in File2
+						 #Records comm to File1 and File2
+						 
+#Records Present only in File1
+comm -23 File1.txt File2.txt
+#Records Present only in File2
+comm -13 File1.txt File2.txt
+#Records comm to File1 and File2
+comm -12 File1.txt File2.txt
+#----------------------------------------------------------------------------------------------------------------------------#
+						 

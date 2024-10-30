@@ -1,0 +1,6 @@
+OrderDate	Region	Manager	SalesMan	Item		Units	 Unit_price 	Sale_amt
+2-26-18	        Central	Timothy	David		Cell Phone	27	 225.00 	 6,075.00 
+10-22-18	East	Martha	Alexander	Cell Phone	64	 225.00 	 14,400.00 
+11-8-18		East	Douglas	Karen		Cell Phone	15	 225.00 	 3,375.00 
+4-27-19		East	Martha	Diana		Cell Phone	96	 225.00 	 21,600.00 
+9-27-19		West	Timothy	Stephen		Cell Phone	76	 225.00 	 17,100.00 
