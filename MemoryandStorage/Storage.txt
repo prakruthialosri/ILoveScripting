@@ -1,0 +1,1 @@
+df -T /home/ec2-user  - to Find out which storage system a directry belongs

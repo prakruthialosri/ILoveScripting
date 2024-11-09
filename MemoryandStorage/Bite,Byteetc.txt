@@ -1,0 +1,7 @@
+The order of the units of computer storage from smallest to largest is: 
+Bit: The smallest unit, which is one-eighth of a byte 
+Byte: Eight bits make up one byte 
+Kilobyte: One thousand bytes, or 1,000 bytes 
+Megabyte: One million bytes, or 1,000,000 bytes 
+Gigabyte: One billion bytes, or 1,000,000,000 bytes 
+Terabyte: One trillion bytes, or 1,000,000,000,000 bytes 

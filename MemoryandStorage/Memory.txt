@@ -1,0 +1,4 @@
+cat /proc/meminfo
+free -m
+top
+htop
