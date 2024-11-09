@@ -1,0 +1,38 @@
+date --date="05/11/2024"  #specific format
+date --date="2 year ago"
+date --date="2 month ago"
+date --date="yesterday"
+date --date="10 day ago"
+date --date="next tue"
+date --date="2 day"
+date -r file.txt  #last modified timestamp of file
+
+
+###########################
+%D: Display date as mm/dd/yy. 
+date "+%D"      
+%d: Display the day of the month (01 to 31). 
+date "+%d"-"%m"-"%Y"      
+%a: Displays the abbreviated name for weekdays (Sun to Sat).
+date  "+ %a %d"-"%m"-"%Y"
+%A: Displays full weekdays (Sunday to Saturday).
+date  "+ %A %d"-"%m"-"%Y"
+%h: Displays abbreviated month name (Jan to Dec).
+%b: Displays abbreviated month name (Jan to Dec).
+date  "+ %A %d"-"%h"-"%Y"
+date  "+ %A %d"-"%B"-"%Y"
+%B: Displays full month name(January to December).
+%m: Displays the month of year (01 to 12).
+%y: Displays last two digits of the year(00 to 99).
+%Y: Display four-digit year. 
+%T: Display the time in 24 hour format as HH:MM:SS.
+date "+%D"
+%H: Display the hour.
+%M: Display the minute.
+%S: Display the seconds.
+date  "+ %A %d"-"%B"-"%Y %H %M %S"
+###########################
+
+time ls -ltr
+time
+time { command1 ; command2 ; command3 ; }
