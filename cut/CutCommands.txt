@@ -1,0 +1,10 @@
+echo "prakruthi as" | cut -f 2 -d " "
+
+#NOTE:Tabs and backspaces are treated like as a character of 1 byte.
+
+cut -b 1-10  cut.txt #bytes  
+cut -b 1,2   cut.txt #1st and 2nd byte 
+cut -b 1-    cut.txt  #1st to end
+
+cut -f 1,2 -d " " cut.txt --output-delimiter='%'
+cut -c1-5,10-15 data.txt
