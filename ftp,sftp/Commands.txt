@@ -1,0 +1,7 @@
+sftp ubuntu@ec2-54-146-156-198.compute-1.amazonaws.com
+ put Test2file.txt /tmp
+ get Test2file.txt /tmp
+ 
+ 
+ scp
+ scp Test2file.txt  ubuntu@ec2-54-146-156-198.compute-1.amazonaws.com:/tmp
