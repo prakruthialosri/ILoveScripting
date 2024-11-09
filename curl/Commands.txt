@@ -1,0 +1,5 @@
+curl https://www.geeksforgeeks.org/curl-command-in-linux-with-examples
+curl https://www.geeksforgeeks.org/curl-command-in-linux-with-examples/ -o Output.txt
+curl -# -o sample.zip  https://www.geeksforgeeks.org/curl-command-in-linux-with-examples #progress meter
+curl -u username:password https://example.com/api
+curl -T uploadfile.txt ftp://example.com/upload/
