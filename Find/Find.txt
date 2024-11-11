@@ -5,3 +5,4 @@ find -perm 777
 find -type d
 find -type f -name "*.txt" -exec grep 'Doraemon' --colour {} \;
 find -mtime -7
+find /home/ec2-user/LinuxLearning -maxdepth 3 -type f
