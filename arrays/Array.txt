@@ -1,0 +1,47 @@
+array=(1,2,3,4,5)
+echo $array[0]
+echo ${#array[@]}
+
+
+directory=`pwd`
+files=`find "$directory" -maxdepth 2 -type f`
+#echo $files
+
+for i in ${files[@]}
+do
+   perm=`ls -l $i| cut -f 1 -d " "`
+   echo $perm
+    if [ "$perm" == "-rw-r--r--." ];then
+        echo "$perm"
+     fi
+done
+
+
+a=(pakku prakruthi as niharika)
+echo "First element of rray is  is ${a[0]}"
+echo "array content is ${a[@]}"
+echo "array length is ${#a[0]}"
+echo "pop fun"
+unset a[1]
+echo "content now is ${a[@]}"
+echo "push fun"
+a[1]="pkku"
+echo "content now is ${a[@]}"
+sa=("${a[@]:2:3}")
+
+echo "content now is ${sa[@]}"
+
+echo "-----------------------------"
+for i in "${a[@]}"
+do
+echo $i
+done
+
+
+len=${#a[@]}
+
+echo "----------------------"
+for ((i=0;i<$len;i++))
+do
+ echo ${a[$i]}
+done
