@@ -1,0 +1,12 @@
+read name
+read -p "enter your name" ; echo $name
+read -n 6 -p " Enter 6 characters only: "
+read -s -p "Enter password: "  
+read  -p "enter 2 var" var var2 ; echo $var $var2 
+read var1 var2 <<< "Hello world!" ; echo $var1
+read -d "-" var ; echo $var
+IFS="-" ; read var1 vr2 var3 ; echo $var3
+read -t 5 var ; echo $var
+read -a array <<< "Hello world!"
+
+
