@@ -1,1 +1,17 @@
+echo "Enter first Number"
+read a
+#a=7
+echo "Enter Second Number"
+read b
+#b=3
+echo "Enter the operator"
+read operator
+c=$((a $operator b))
+#id=$((a - b ))
+#ie=$((a * b ))
+#f=$((a / b ))
 
+echo "operator of $a and $b is : $c"
+#echo " Substraction of $a and $b  is $d "
+#echo " Multiplication  of $a and $b  is $e "
+#echo  " Division        of $a and $b  is $f "
