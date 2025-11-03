@@ -1,0 +1,48 @@
+Memory (RAM)
+
+Definition:
+-----------
+Temporary / volatile memory
+Used by system to perform tasks faster
+Data is lost when the system shuts down
+
+
+Purpose:
+-----------
+To hold running programs, active processes, and temporary data
+Helps improve speed and multitasking
+
+free -h          # Shows total, used & free memory (RAM + swap)
+top              # Displays real-time memory usage of processes
+htop             # (If installed) colorful, easier version of top
+vmstat           # Virtual memory statistics
+cat /proc/meminfo # Detailed memory info from kernel
+
+
+💾 Storage (Disk / Hard Drive / SSD)
+
+Definition:
+Permanent / non-volatile memory
+Used to store files, data, and system programs
+Data remains even after shutdown
+
+
+Purpose:
+To store OS files, user data, and logs
+Allows long-term saving and retrieval of information
+Important Commands:
+
+df -h            # Shows disk usage per filesystem
+du -h            # Shows space usage of files & directories
+lsblk            # Lists all storage devices & partitions
+fdisk -l         # Shows detailed partition info
+find / -type f -size +100M  # Finds large files
+
+
+
+Feature	🧠 Memory	💾 Storage
+Type	Temporary	Permanent
+Volatility	Volatile	Non-Volatile
+Purpose	Speed & performance	Data storage
+Example	RAM, Swap	Hard disk, SSD
+Key Commands	free -h, top	df -h, du -h
