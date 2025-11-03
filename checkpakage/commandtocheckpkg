@@ -1,0 +1,30 @@
+
+📝 Types of Package Managers & How to Check if a Package is Installed
+
+--------------------------------------------------------------
+1️⃣ Debian / Ubuntu (APT based)
+--------------------------------------------------------------a
+dpkg -l | grep <package-name>
+apt list --installed | grep <package-name>
+
+--------------------------------------------------------------
+2️⃣ RHEL / CentOS / Fedora (YUM or DNF based)
+--------------------------------------------------------------
+rpm -qa | grep <package-name>
+
+--------------------------------------------------------------
+3️⃣ Arch Linux (PACMAN based)
+--------------------------------------------------------------
+pacman -Qs <package-name>
+
+--------------------------------------------------------------
+4️⃣ openSUSE (ZYPPER based)
+--------------------------------------------------------------
+zypper se --installed-only <package-name>
+
+--------------------------------------------------------------
+5️⃣ Generic (Works on all distros)
+--------------------------------------------------------------
+which <command>
+# ✅ Prints path if installed
+# ❌ Blank if not installed
