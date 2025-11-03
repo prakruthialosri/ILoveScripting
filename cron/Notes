@@ -1,0 +1,29 @@
+corn jobs
+-------------------
+* * * * * command
+│ │ │ │ │
+│ │ │ │ └── Day of week (0 - 6) (Sunday=0)
+│ │ │ └──── Month (1 - 12)
+│ │ └────── Day of month (1 - 31)
+│ └──────── Hour (0 - 23)
+└────────── Minute (0 - 59)
+
+-------------------
+year | month | week | day | seconds | min | hour 
+
+=====================================|
+minute | hour | day  | month | date  |
+=====================================|
+[0-59]  [0-23] [1-31]  [1-12]   [0-6]|
+-------------------------------------|
+
+| Task                             | Cron Schedule | Command                                      | Meaning                    |
+| :------------------------------- | :------------ | :------------------------------------------- | :------------------------- |
+| **Run every minute**             | `* * * * *`   | `echo "Hi Pakku" >> /tmp/test.txt`           | Appends text every minute  |
+| **Run every 5 minutes**          | `*/5 * * * *` | `/home/user/script.sh`                       | Runs script every 5 mins   |
+| **Run every day at 5 AM**        | `0 5 * * *`   | `sh /home/user/backup.sh`                    | Executes backup daily      |
+| **Run every Monday at 9 AM**     | `0 9 * * 1`   | `echo "Weekly check!" >> /tmp/week.txt`      | Runs weekly task           |
+| **Run every month on the 1st**   | `0 0 1 * *`   | `tar -czf /backup/monthly.tar.gz /home/user` | Makes monthly backup       |
+| **Run every Sunday at midnight** | `0 0 * * 0`   | `rm -rf /tmp/*`                              | Cleans temp folder weekly  |
+| **Run every hour**               | `0 * * * *`   | `date >> /tmp/hourly.txt`                    | Logs the time every hour   |
+| **Run at 10:30 PM daily**        | `30 22 * * *` | `/home/user/nightjob.sh`
