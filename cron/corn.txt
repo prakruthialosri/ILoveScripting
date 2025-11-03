@@ -1,0 +1,21 @@
+# Step 1: Update packages
+sudo apt update
+
+# Step 2: Install cron
+sudo apt install cron -y
+
+# Step 3: Enable cron service (start automatically on boot)
+sudo systemctl enable cron
+
+# Step 4: Start cron service
+sudo systemctl start cron
+
+# Step 5: Check cron service status
+sudo systemctl status cron
+
+# Step 6: Edit cron jobs for current user
+crontab -e
+
+# Step 7: Add your cron job (example)
+# Runs every minute and writes date to a file
+* * * * * echo "Cron test run at $(date)" >> /home/$USER/cron_test.log
