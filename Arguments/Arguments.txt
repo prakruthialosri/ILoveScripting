@@ -1,0 +1,11 @@
+$0	Name of the script itself
+$1, $2, $3, ...	Positional parameters — arguments passed to the script
+$#	Number of positional parameters passed
+$@	All arguments passed to the script (treated as separate words)
+$*	All arguments passed to the script (treated as a single word)
+$?	Exit status of the last executed command (0 = success)
+$$	Process ID (PID) of the current shell
+$!	PID of the last background command
+$-	Current shell options/flags (set using set command)
+$_	Last argument of the previous command
+$IFS	Internal Field Separator (used for word splitting, default: space/tab/newline)
