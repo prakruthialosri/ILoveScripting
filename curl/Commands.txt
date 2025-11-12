@@ -3,3 +3,9 @@ curl https://www.geeksforgeeks.org/curl-command-in-linux-with-examples/ -o Outpu
 curl -# -o sample.zip  https://www.geeksforgeeks.org/curl-command-in-linux-with-examples #progress meter
 curl -u username:password https://example.com/api
 curl -T uploadfile.txt ftp://example.com/upload/
+curl -X POST "https://demoqa.com/text-box" \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <your_token_here>" \
+  -H "Content-Type: application/json" \
+  -d '{"userName": "admin"}'
+
